@@ -12,3 +12,6 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 # Why this isn't automatically set based on language I do not know.
 gsettings set org.gnome.desktop.interface clock-format '12h'
+
+# Load keybinds from keybinds.ini
+dconf load / < keybinds.ini
