@@ -1,6 +1,8 @@
-# up-n-running
+# Hello 👋 let's get started.
 
-hello I'm a dood
-
-
-A script to get your favorite distro up and running.
+The script sets custom keybinds using keybind.ini so make one using this command.
+```
+dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > keybinds.ini
+```
+Mind you this will only work if there you've set custom shortcuts in Settings > Keyboard > Keyboard Shortcuts.
+Alternatively you can use mine which is included in the repo.
