@@ -3,10 +3,8 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,m
 gsettings set org.gnome.mutter center-new-windows true # No good reason not to have.
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true # One of the coolest lazy features.
 
-# Because they're awesome.
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# For users
-# flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+# Only for the current user, used for better compartmentalization.
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Computers aren't the only things that sleep.
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
