@@ -1,6 +1,6 @@
 # Hello 👋 let's get started.
 
-*Disclaimer this script was made with fedora workstation/silverblue in mind you'll need to change the script to suit your distro.*
+*Disclaimer this repo was made with fedora workstation/silverblue in mind you'll need to change the script to suit your distro.*
 
 The script sets custom keybinds using keybind.ini so make one using this command.
 ```
