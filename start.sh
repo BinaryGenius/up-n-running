@@ -21,10 +21,7 @@ function globalcommands {
 
 	# Load keybinds from keybinds.ini.
 	dconf load / < keybinds.ini
-
-	# Speed of typing with the comfort of a GUI.
-	gsettings set org.gnome.nautilus.preferences always-use-location-entry true
-
+	
 	# Useful for notes or any time you need to create a file.
 	mkdir /home/$USER/Templates; cd /home/$USER/Templates; touch MarkDown.md Shell\ Script.sh Text.txt
 
@@ -34,11 +31,13 @@ function globalcommands {
 	# Because lazy.
 	gsettings set org.gnome.desktop.datetime automatic-timezone true
 
-	# For gnome enhancements
+	# For gnome enhancements.
 	flatpak install com.mattjakeman.ExtensionManager -y
 
-	# Fantastic browser
-	flatpak install com.brave.Browser -y
+	# Reinstall flatpaks.
+	sh flatpaks.sh
+	
+	# Fantastic browser.
 	xdg-settings set default-web-browser com.brave.Browser.desktop
 }
 
