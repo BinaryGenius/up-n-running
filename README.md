@@ -7,7 +7,7 @@ The script sets custom keybinds using keybind.ini so make one using this command
 dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > keybinds.ini
 ```
 Mind you this will only work if you've set custom shortcuts in Settings > Keyboard > Keyboard Shortcuts.
-Alternatively you can use mine which is included in the repo be sure to input your username.
+Alternatively you can use mine which is included in the repo be sure to input your username where it says "(replaceme!)".
 
 To preserve all your flatpaks across installs use this script.
 ```
