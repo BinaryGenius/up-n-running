@@ -7,8 +7,7 @@ The script sets custom keybinds using keybind.ini so make one using this command
 ```
 dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > keybinds.ini
 ```
-Mind you this will only work if you've set custom shortcuts in Settings > Keyboard > Keyboard Shortcuts.
-Alternatively you can use mine which is included in the repo be sure to input your username where it says "(replaceme!)".
+Mind you this will only work if you've set custom shortcuts in Settings > Keyboard > Keyboard Shortcuts. Alternatively you can use mine which is included in this repo, but be sure to input your username where it says "(replaceme!)". Also in keybinds.ini there is a command to change brightness it uses my script which can be found [here](https://github.com/BinaryGenius/Gnome-Brightness-Ctrl). If you want brightness control follow the instructions [here](https://github.com/BinaryGenius/Gnome-Brightness-Ctrl/blob/main/README.md) otherwise remove the key binding.
 
 To preserve all your flatpaks across installs use this script.
 ```
