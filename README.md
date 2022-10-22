@@ -21,7 +21,7 @@ Please note that if you installed then removed a flatpak, and the config files a
 ```
 git clone https://github.com/BinaryGenius/up-n-running; cd up-n-running
 ```
-Make sure keybinds.ini, flatpaks.sh, and start.sh are all in the same folder. Now run this and follow the prompts, this may take a while.
+Make sure keybinds.ini, flatpaks.sh, and start.sh are all in this folder. Now run this and follow the prompts, this may take a while.
 ```
 sh start.sh
 ```
